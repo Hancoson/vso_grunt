@@ -1,0 +1,23 @@
+/*
+combined files : 
+
+*/
+
+/**
+ *@author Hancoson
+ *@date 2014-10-24
+**/
+<<<<<<< HEAD
+.map1_box11{
+=======
+.map1_box{
+    width: 96%;
+    margin: 2% auto;
+    height: 400px !important;
+}
+.map1_box{
+>>>>>>> ae5a0472506ac3b816372a8e72509766a75a5ae2
+    width: 96%;
+    margin: 2% auto;
+    height: 400px !important;
+}
