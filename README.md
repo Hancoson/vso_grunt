@@ -6,20 +6,6 @@ vso_grunt
 
 <pre><code>
 vso_grunt
-<<<<<<< HEAD
-|-- gruntfile.js
-|-- package.json
-|-- dist        # 构建目录
-|-- docs        # 文档
-|-- fonts       # Icon font，目前使用了 http://staticfile.org/
-|-- gulpfile.js # 构建配置文件
-|-- js          # JS 文件
-|-- less        # LESS 文件
-|-- tools       # 相关工具
-|-- vendor
-`-- widget      # Web 组件
-</code></pre>
-=======
 |-- gruntfile.js	# 构建配置文件
 |-- package.json
 |-- src         	# 开发用页面静态文件
@@ -33,10 +19,6 @@ vso_grunt
 	|-- images      # 线上引用用图片
 	|-- common      # 线上引用用公用库文件（压缩）
 </code></pre>
-<<<<<<< HEAD
->>>>>>> 94a3193f4a2cc1a8393228d3f49b42a0ac4efef3
-=======
-
 用于模块配置，它接受一个对象作为参数。该对象的成员与使用的同名模块一一对应。
 
 每个目标的具体设置，需要参考该模板的文档。就cssmin来讲，minify目标的参数具体含义如下：
@@ -64,4 +46,3 @@ grunt常用模块：
     grunt-contrib-jshint：检查JavaScript语法。
     grunt-contrib-uglify：压缩以及合并JavaScript文件。
     grunt-contrib-watch：监视文件变动，做出相应动作。
->>>>>>> b9f593f1ec005e5d62c5eace6adab4293ca7cdfe
