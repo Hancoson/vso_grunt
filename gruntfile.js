@@ -26,11 +26,8 @@ module.exports = function(grunt){
         },
         concat: {
             options: {
-<<<<<<< HEAD
                 //separator: ';',
-=======
-                separator: ';',
->>>>>>> ae5a0472506ac3b816372a8e72509766a75a5ae2
+
                 banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n'
             },
             page: {
@@ -97,25 +94,16 @@ module.exports = function(grunt){
             }
         },
         imagemin:{
-            common:{
-<<<<<<< HEAD
-                options: {
-                    optimizationLevel: 7, //定义 PNG 图片优化水平
-                    pngquant: true
-                },
-=======
->>>>>>> ae5a0472506ac3b816372a8e72509766a75a5ae2
-                files:[{
-                    expand:true,
-                    cwd:'images/',
-                    src:['**/*.{png,jpg,gif}'],
-                    dest: 'build/images/'
-                }]
-            }
-<<<<<<< HEAD
-
-=======
->>>>>>> ae5a0472506ac3b816372a8e72509766a75a5ae2
+            options: {
+                optimizationLevel: 7, //定义 PNG 图片优化水平
+                pngquant: true
+            },
+            files:[{
+                expand:true,
+                cwd:'images/',
+                src:['**/*.{png,jpg,gif}'],
+                dest: 'build/images/'
+            }]
         }
     });
 
@@ -132,11 +120,8 @@ module.exports = function(grunt){
     grunt.registerTask('build',function(pageName){
         if(pageName == 'common'){
             grunt.task.run(['copy:common','cssmin:common','uglify:common']);
-<<<<<<< HEAD
         }else if(pageName == 'images'){
-=======
-        }else if(pageName == 'image'){
->>>>>>> ae5a0472506ac3b816372a8e72509766a75a5ae2
+
             grunt.task.run(['imagemin:common']);
         }else{
             grunt.config.set('page',pageName);
