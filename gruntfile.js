@@ -48,7 +48,7 @@ module.exports = function(grunt){
             page: {
                 options: {
                     force:true,
-                    banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n',
+                    banner: '/* \n *@name: <%= pkg.name %> - v<%= pkg.version %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/\n',
                     baseUrl: 'src/pages/<%= grunt.config.get("page") %>',
                     mainConfigFile: 'common/config.js',
                     src:['**/*.js','!jquery.min.js'],
@@ -76,7 +76,7 @@ module.exports = function(grunt){
         },
         cssmin: {
             options: {
-                banner: '/* \n *@name: <%= pkg.name %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/'
+                banner: '/* \n *@name: <%= pkg.name %> - v<%= pkg.version %>\n *@author: <%= pkg.author %>\n *@url: <%= pkg.homepage %>\n *@date: <%= grunt.template.today("dd-mm-yyyy") %>\n*/'
             },
             common: {
                 expand:true,
